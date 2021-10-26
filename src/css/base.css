@@ -1,14 +1,22 @@
 :root{
-    --primary-color: #49b14d;
+    --lighter-green: #d5e6d2;
+    --light-green:#abd373;
     --white-text:white;
     --black-text: #3c3c3c;
     --yellow: #ffdd20;
-    --light-green: #6dc171;
+    --green: #6dc171;
+    --animation-hover: .3s ease;
 }
 
 *{  
-    font-family: 'Zen Old Mincho', serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+html{
+    font-size: 62.5%;
+    font-family: 'Zen Old Mincho', serif;
+}
+
 

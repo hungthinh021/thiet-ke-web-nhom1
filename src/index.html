@@ -4,93 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../Grid layout/grid.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/favicon.png?1628514159582">
     <title>Trồng cây</title>
 </head>
 <body>
-    <div class="navbar__header">
-        <div class="container" style="display: flex;justify-content: space-between; border-bottom: 1px solid #64bc67;padding: 10px;">
-            <div class="social">
-                <span>Theo dõi:</span>
-                <ul class="social-list">
-                    <li class="social-item"><i class="social-icon fab fa-facebook"></i></li>
-                    <li class="social-item"><i class="social-icon fab fa-twitter"></i></li>
-                    <li class="social-item"><i class="social-icon fab fa-google-plus-g"></i></li>
-                    <li class="social-item"><i class="social-icon fab fa-instagram"></i></li>
-                </ul>
+    
+    <div class="app">
+        <div class="header">
+            <div class="grid wide">
+                <div class="header__top">
+                    <div class="header__top-head">
+                        <div class="header__social">
+                            <span>Follow us:</span>
+                            <a href="" class="header__social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="" class="header__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="header__social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="header__user">
+                            <div class="header__user-login">
+                                <a href="" class="header__user-link"><span>Login</span><i class="fas fa-sign-in-alt"></i></a>
+                            </div>
+
+                            <div class="header__user-register">
+                                <a href="" class="header__user-link"><span>Register</span><i class="fas fa-user-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__top-body">
+                                <div class="header__logo">
+                                    <a href="" class="header__logo-link"><img src="../img/logo.webp" alt=""></a>
+                                </div>
+        
+                                <div class="header__search">
+                                    <input type="text" placeholder="Search here...">
+                                    <button>
+                                        <a href="" class="header__search-link"><i class="header__search-icon fas fa-search"></i></a>
+                                    </button>
+                                </div>
+        
+                                <div class="header__cart">
+                                    <button><a href=""><i class="header__cart-icon fas fa-cart-plus"></i></a></button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="user">
-                <div class="sign-in">
-                    <i class="fas fa-sign-in-alt"></i>
-                    <span>Đăng nhập</span>
-                </div>
-                <div class="register">
-                    <i class="fas fa-user-plus"></i>
-                    <span>Đăng kí</span>
-                </div>
-            </div>
+                <div class="header__bottom">
+                <div class="navbar">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__item-link">Home</a></li>
+                        <li class="nav__item"><a href="" class="nav__item-link">Introduce</a></li>
+                        <li class="nav__item">
+                            <a href="" class="nav__item-link">Produce<i class="fas fa-chevron-down" id="nav__produce-icon"></i></a>
+                            <!-- <div class="nav__produce">
+                                <ul class="nav__produce-list">
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li class="nav__item"><a href="" class="nav__item-link">News</a></li>
+                        <li class="nav__item"><a href="" class="nav__item-link">Contact</a></li>
 
-        </div> 
-        <div class="container">
-                <div class="row">
-                    <div class="logo col-3">
-                        <a href="#"><img src="../img/logo.png" alt=""></a>
-                    </div>
-    
-                    <div class="search col-6">
-                        <input class="search__input" type="text">
-                        <button class="search__icon"><i class="fas fa-search"></i></button>
-                    </div>
-    
-                    <div class="cart col-3">
-                        <a class="cart__icon" href="#"><i class="fas fa-cart-arrow-down"></i></a>
-                        <!-- <div class="cart__box">
-                            <ul class="cart__list">
-                                <li class="cart__item">Item 1</li>
-                                <li class="cart__item">Item 2</li>
-                                <li class="cart__item">Item 3</li>
-                            </ul>
-                        </div> -->
-                    </div>
+                    </ul>
                 </div>
-
-                
+            
         </div>
+
+        </div>
+
+
+
     </div>
-
-    <div class="navbar__bottom">
-            <div class="container">
-                <ul class="navbar__bottom-list">
-                    <li class="navbar__bottom-item">Trang chủ</li>
-                    <li class="navbar__bottom-item">Giới thiệu</li>
-                    <li class="navbar__bottom-item">
-                        Sản phẩm<i class="fas fa-chevron-down"></i>
-                    </li>
-                    <li class="navbar__bottom-item">Tin tức</li>
-                    <li class="navbar__bottom-item">Liên hệ</li>
-                </ul>
-            </div>
-    </div>
-
-
-    
     
         
     
-       
+
 
     
 
 
     <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
