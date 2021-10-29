@@ -6,6 +6,10 @@
     --yellow: #ffdd20;
     --green: #6dc171;
     --animation-hover: .3s ease;
+    --pink-pastel:#f9efe9;
+    --green-pastel:#f2f8f4;
+    --pink-pastel: #f6edee;
+    
 }
 
 *{  
@@ -19,4 +23,14 @@ html{
     font-family: 'Zen Old Mincho', serif;
 }
 
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 

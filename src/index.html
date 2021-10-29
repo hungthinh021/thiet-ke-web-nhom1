@@ -17,10 +17,12 @@
 <body>
     
     <div class="app">
+
+        <!-- Header start -->
         <div class="header">
             <div class="grid wide">
                 <div class="header__top">
-                    <div class="header__top-head">
+                    <div class="header__top-head hide-on-mobile-tablet">
                         <div class="header__social">
                             <span>Follow us:</span>
                             <a href="" class="header__social-link"><i class="fab fa-facebook"></i></a>
@@ -36,55 +38,130 @@
                                 <a href="" class="header__user-link"><span>Register</span><i class="fas fa-user-plus"></i></a>
                             </div>
                         </div>
+
+                        
                     </div>
                     
                     <div class="header__top-body">
-                                <div class="header__logo">
+                        <div class="header__logo">
                                     <a href="" class="header__logo-link"><img src="../img/logo.webp" alt=""></a>
                                 </div>
         
-                                <div class="header__search">
+                                <div class="header__search hide-on-mobile-tablet">
                                     <input type="text" placeholder="Search here...">
                                     <button>
                                         <a href="" class="header__search-link"><i class="header__search-icon fas fa-search"></i></a>
                                     </button>
                                 </div>
         
-                                <div class="header__cart">
-                                    <button><a href=""><i class="header__cart-icon fas fa-cart-plus"></i></a></button>
-                        </div>
+                                <div class="header__cart"> 
+                                    <div class="header__search-on-tablet">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    
+                                    <button class="hide-on-mobile"><a href=""><i class="header__cart-icon fas fa-cart-plus"></i></a></button>
+                                    
+                                    <div class="bars">
+                                        <i class="fas fa-bars"></i>
+                                    </div>
+                            
+                                </div>
+
+                                
                     </div>
                 </div>
             </div>
+        </div>
 
-                <div class="header__bottom">
+        <div class="header__bottom hide-on-mobile-tablet">
+            <div class="grid wide">
                 <div class="navbar">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="" class="nav__item-link">Home</a></li>
-                        <li class="nav__item"><a href="" class="nav__item-link">Introduce</a></li>
+                        <li class="nav__item"><a href="" class="nav__item-link">About us</a></li>
                         <li class="nav__item">
                             <a href="" class="nav__item-link">Produce<i class="fas fa-chevron-down" id="nav__produce-icon"></i></a>
-                            <!-- <div class="nav__produce">
+                            
+                            
+                            <div class="nav__produce">
                                 <ul class="nav__produce-list">
-                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
-                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
-                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
-                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
-                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">cây cảnh</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Produce1</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Produce2</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Produce3</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Produce4</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Produce5</a></li>
                                 </ul>
-                            </div> -->
+                            </div>
                         </li>
                         <li class="nav__item"><a href="" class="nav__item-link">News</a></li>
                         <li class="nav__item"><a href="" class="nav__item-link">Contact</a></li>
 
                     </ul>
                 </div>
-            
+            </div>
+        </div>
+        <!-- Header end -->
+
+
+
+        <!-- slider start -->
+        <div class="grid wide">
+            <div class="slider">
+                <div class="slider__img">
+                    <div class="slide">
+                        <div class="info">
+                            <h2>Slide 1</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut totam, quos dolorum eveniet earum, velit provident repellat quibusdam quo rerum expedita? Repellendus, quas voluptatibus porro voluptas fugiat placeat cumque.</span>
+                        </div>
+                        <img src="../img/slider 1.webp" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <div class="info">
+                            <h2>Slide 2</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut totam, quos dolorum eveniet earum, velit provident repellat quibusdam quo rerum expedita? Repellendus, quas voluptatibus porro voluptas fugiat placeat cumque.</span>
+                        </div>
+                        <img src="../img/slider 2.webp" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <div class="info">
+                            <h2>Slide 3</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut totam, quos dolorum eveniet earum, velit provident repellat quibusdam quo rerum expedita? Repellendus, quas voluptatibus porro voluptas fugiat placeat cumque.</span>
+                        </div>
+                        <img src="../img/slider 1.webp" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <div class="info">
+                            <h2>Slide 4</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut totam, quos dolorum eveniet earum, velit provident repellat quibusdam quo rerum expedita? Repellendus, quas voluptatibus porro voluptas fugiat placeat cumque.</span>
+                        </div>
+                        <img src="../img/slider 2.webp" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <div class="info">
+                            <h2>Slide 5</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut totam, quos dolorum eveniet earum, velit provident repellat quibusdam quo rerum expedita? Repellendus, quas voluptatibus porro voluptas fugiat placeat cumque.</span>
+                        </div>
+                        <img src="../img/slider 1.webp" alt="">
+                    </div>
+
+                    <div class="slider__navigation">
+                        <div class="slider__btn"></div>
+                        <div class="slider__btn"></div>
+                        <div class="slider__btn"></div>
+                        <div class="slider__btn"></div>
+                        <div class="slider__btn"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        </div>
+        
 
-
+        <!-- slider end -->
 
     </div>
     
