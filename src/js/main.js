@@ -1,5 +1,8 @@
-
-
+const slides = document.querySelectorAll('.slide')
+const slideBtn = document.querySelectorAll('.slider__btn')
+const bar = document.querySelector('.bars')
+const closeBar = document.querySelector('.close')
+const navbarOnMobile = document.querySelector('.header__bottom') 
 
 const app = {
     render: function(){
@@ -7,8 +10,9 @@ const app = {
     },
 
     handleSlider: function(){
-        const slides = document.querySelectorAll('.slide')
-        const slideBtn = document.querySelectorAll('.slider__btn')
+
+        // slider start
+        
         let currentSlide = 1;
 
 
@@ -62,10 +66,34 @@ const app = {
             repeater()
         }
         repeat()
+
+        // slider start
+
+        // parallax effect
+
+        document.addEventListener('mousemove', parallax)
+        
+        function parallax(e){
+            this.querySelectorAll('.slider__img').forEach(img => {
+                const speed = img.getAttribute('data-speed')
+
+                const x = (window.innerHeight - e.pageX*speed)/900
+                const y = (window.innerHeight - e.pageY*speed)/900
+
+                img.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+    },
+
+    handleEvent:function(){
+        
+
     },
 
     start: function(){
         this.handleSlider();
+
+        this.handleEvent();
     }
 }
 

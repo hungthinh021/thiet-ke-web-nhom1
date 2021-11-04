@@ -5,7 +5,7 @@ body{
 }
 
 .app{
-   
+   height: 1000px
 }
 .header{
     height: 120px;
@@ -237,7 +237,6 @@ body{
 .nav__produce{
     position: absolute;
     width: 250px;
-    visibility: visible;
     animation: fadeInUp .5s ease-in-out;
     display: none;
     z-index: 5;
@@ -281,17 +280,23 @@ body{
     display: none;
 }
 
+.close{
+    display: none;
+}
+
+
 /* slider */
 
-.slider{
-    
-}
 
 .slider__img{
     position: relative;
-    width: 1180px;
+    width: 100%;
     height: 500px;
     margin: 10px;
+    object-fit: contain;
+    float: right;
+    flex: 1;
+    display: block;
 }
 
 #slide1{
@@ -314,6 +319,7 @@ body{
     z-index: 1;
     position: absolute;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     clip-path: circle(0% at 0 50%);
@@ -323,6 +329,8 @@ body{
     clip-path: circle(200% at 0% 50%);
     transition: clip-path 1s linear;
 }
+
+
 
 
 .slider__navigation{
@@ -348,14 +356,6 @@ body{
 .slider__btn.active{
     background-color: var(--light-green);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-}
-
-.slide img{
-    height: 500px;
-    width: 500px;
-    object-fit: contain;
-    float: right;
-    flex: 1;
 }
 
 .info{
@@ -420,9 +420,10 @@ body{
 
 /* Mb & tablet */
 @media (max-width:1023px) {
-:root{
-    --height-nav:82px;
-}
+    :root{
+        --height-nav:82px;
+    }
+
 
     .hide-on-mobile-tablet{
         display: none;
@@ -432,6 +433,18 @@ body{
         justify-content: space-between;
     }
     
+    .header__cart-icon{
+        color: white;
+    }
+
+    .header{
+        height: var(--height-nav);
+    }
+
+    .header{
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 8%);
+    }
+
     .bars{
         display: flex;
         align-items: center;
@@ -450,25 +463,21 @@ body{
         color: var(--yellow);
     }
 
-    .header__cart-icon{
+    .header__search-on-tablet{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .header__search-on-tablet i{
+        padding: 0 15px;
+        font-size: 3rem;
         color: white;
-    }
-
-    .header{
-        height: var(--height-nav);
-    }
-
-    .header{
-        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 8%);
+        transition: var(--animation-hover);
     }
 }
 
-/* option */
-@media (max-width:1238px){
-    .slider__img{
-        width: 986px;
-    }
-}
+
 /* tablet */
 
 @media (min-width: 740px) and (max-width: 1023px){
@@ -482,22 +491,7 @@ body{
         margin: 0;
     }
 
-    .slide img{
-        height: 375px;
-    }
-
-    .header__search-on-tablet{
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .header__search-on-tablet i{
-        padding: 0 15px;
-        font-size: 3rem;
-        color: white;
-        transition: var(--animation-hover);
-    }
+    
 
     .header__search-on-tablet i:hover{
         color: var(--yellow);
@@ -505,24 +499,50 @@ body{
 
     .info{
         transform: translateY(30%);
+        top: -100px;
+    }
+
+    .info h1{
+        font-size: 5rem;
+    }
+
+    .info h2{
+        font-size: 3rem;
+    }
+
+    .info h2{
+        font-size: 2rem;
     }
 }
 
 /* mobile */
 
-@media (max-width: 730px){
+@media (max-width: 739px){
     .hide-on-mobile{
         display: none;
+    }
+
+    .header__bottom{
+        display: none;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .nav__list{
+        flex-direction: column;
+    }
+
+    .slide{
+        height: 175px;
+        line-height: 175px;
+        flex-direction: column;
     }
 
     .slider__img{
         width: 100%;
         height: 175px;
         margin: 0 auto;
-    }
-
-    .slide img{
-        height: 175px;
     }
 
     .header__cart{
@@ -533,8 +553,31 @@ body{
         display: none;
     }
 
-    .info{
-        top:0;
-        transform: translateY(20%);
+    .info h1{
+        font-size: 2rem;
+        margin: 0;
+        padding: 0px;
+        height: 30px;
+    }
+
+    .info h2{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .info h2{
+        font-size: 1rem;
     }
 }
+
+/* option */
+
+@media (max-width:320px) {
+    *{
+        display: none;
+    }
+}
+
+
+
+
