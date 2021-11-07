@@ -97,4 +97,4 @@ const app = {
     }
 }
 
-// app.start();
+app.start();
