@@ -59,6 +59,8 @@ footer{
     padding: 20px;
 }
 /* responsive */
+
+
 /* Mobile & table */
 @media (max-width: 1023px) {
     .footer {
