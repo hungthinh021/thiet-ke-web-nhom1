@@ -1,9 +1,4 @@
 /* header */
-
-body{
-    overflow: hidden;
-}
-
 .app{
    height: 1000px
 }
@@ -590,7 +585,7 @@ body{
 
 @media (max-width:320px) {
     *{
-        display: none;
+        /* display: none; */
     }
 }
 

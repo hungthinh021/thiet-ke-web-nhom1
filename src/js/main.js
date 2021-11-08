@@ -67,14 +67,16 @@ const app = {
         }
         repeat()
 
-        // slider start
+        // slider end
 
+    },
+
+    handleEvent:function(){
         // parallax effect
-
         document.addEventListener('mousemove', parallax)
         
         function parallax(e){
-            this.querySelectorAll('.slider__img').forEach(img => {
+            this.querySelectorAll('.slider_img').forEach(img => {
                 const speed = img.getAttribute('data-speed')
 
                 const x = (window.innerHeight - e.pageX*speed)/900
@@ -83,10 +85,6 @@ const app = {
                 img.style.transform = `translateX(${x}px) translateY(${y}px)`
             })
         }
-    },
-
-    handleEvent:function(){
-        
 
     },
 
@@ -97,4 +95,4 @@ const app = {
     }
 }
 
-// app.start();
+app.start();
